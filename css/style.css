@@ -1,15 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body{
-    font-family: 'Montserrat', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root{
-    --color-primary: ##141922;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-primary);
+}
+
+:root {
+    --color-primary: #141922;
     --color-secondary: #000000;
     --color-tertiary: #282828;
+    --color-text: #6D6D6D;
 }
 
-.bodycontainer{
+.paddingbottom{
+    padding-bottom: 1rem;
+}
+
+.bodycontainer {
     height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.flexcol{
+    flex-direction: column;
+}
+
+.grow{
+    flex-grow: 1 ;
+}
+
+.noshrink{
+    flex-shrink: 0;
+}
+
+.nav{
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+.logo img{
+    width: 70%;
+    padding: 2rem 1rem;
+}
+
+.nav-btns .btn{
+    padding: 0.7rem 1rem;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.nav .icon{
+    max-width: 24px;
+    aspect-ratio: 1;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.nav-playlist, .nav-pl-names{
+    padding: 1rem
+}
+
+.nav-playlist i{
+    font-size: 3rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.nav-playlist h4{
+    display: inline-block;
+}
+
+.nav-pl-names{
+    overflow: auto;
+}
+
+.plname{
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
+
+
+
+.btn.selected{
+    color: rgba(255, 255, 255, 0.8);
+    border-left: 2px solid rgb(12, 206, 12);
 }
