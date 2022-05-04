@@ -138,14 +138,86 @@ body {
 }
 
 .genres{
-    margin-left: auto;
-    margin-right: auto;
     color: var(--color-text);
     font-weight: 700;
-    width: 100%;
+    justify-content: center;
 }
 
 .genres span{
     padding: 0.5rem 1rem;
 }
 
+.body{
+    padding: 1rem;
+    overflow: auto;
+}
+
+.recentlyplayed h2{
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.albums{
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.album{
+    flex-basis: calc(100% / 6 - 1rem);
+}
+
+.album h3{
+    text-align: center;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.album .subtitle{
+text-align: center;
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.album img{
+    width: 100%;
+    aspect-ratio: 1;
+    padding-bottom: 1rem;
+}
+
+.createdforyou h2{
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.createdforyou .subtitle{
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding-bottom: 2rem;
+}
+
+.createdforyou{
+    padding-bottom: 2rem;
+}
+
+.popular h2{
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.popular .subtitle{
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding-bottom: 2rem;
+}
+
+.popular{
+    padding-bottom: 2rem;
+}
+
+.popular img{
+    border-radius: 50%;
+}
