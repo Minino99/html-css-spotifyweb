@@ -11,20 +11,25 @@
 </head>
 
 <body>
-    <div class="bodycontainer">
-        <div class="flex">
-            <div class="nav flex flexcol">
-                <div class="logo noshrink"><img src="img/logo.svg" alt=""></div>
-                <div class="nav-btns noshrink">
+    <div class="bodycontainer flex">
+            <div class="nav flex flexcol noshrink">
+
+                <div class="logo"><img src="img/logo.svg" alt=""></div>
+
+                <div class="nav-btns">
                     <div class="btn selected"><img src="img/home.svg" alt="" class="icon"> Home</div>
                     <div class="btn"><img src="img/search.svg" alt="" class="icon"> Cerca</div>
                     <div class="btn"><img src="img/libreria.svg" alt="" class="icon"> La tua libreria</div>
                 </div>
-                <div class="nav-playlist noshrink">
-                    <div class="paddingbottom"><h4>PLAYLIST</h4></div>
-                    <i class="fa-solid fa-square-plus"></i> <h4>Crea Playlist</h4>
+
+                <div class="nav-playlist">
+                    <div class="paddingbottom">
+                        <h4>PLAYLIST</h4>
+                    </div>
+                    <i class="fa-solid fa-square-plus"></i>
+                    <h4>Crea Playlist</h4>
                 </div>
-                <div class="nav-pl-names grow">
+                <div class="nav-pl-names grow flex flexcol">
                     <div class="plname">Nome Playlist</div>
                     <div class="plname">Nome Playlist</div>
                     <div class="plname">Nome Playlist</div>
@@ -32,14 +37,41 @@
                     <div class="plname">Nome Playlist</div>
                     <div class="plname">Nome Playlist</div>
                     <div class="plname">Nome Playlist</div>
+                </div>
+
+                <div class="userinfo">
+                    <div class="downloadpp">
+                        <img src="img/download.svg" alt="" class="icon">
+                        <span>Installa app</span>
+                    </div>
+                    <div class="user">
+                        <img src="img/profile.svg" alt="" class="icon">
+                        <span>John Doe</span>
+                    </div>
                 </div>
             </div>
 
             <div class="main flex flexcol">
-                <div class="header noshrink"></div>
-                <div class="body grow"></div>
+                <div class="header flex">
+                    <div class="btn">EFFETTUA L'UPGRADE</div>
+                </div>
+                <div class="body grow">
+                    <div class="genres">
+                        <span>IN EVIDENZA</span>
+                        <span>PODCAST</span>
+                        <span>CLASSIFICHE</span>
+                        <span>GENERI E MOOD</span>
+                        <span>NUOVE USCITE</span>
+                        <span>SCOPRI</span>
+                    </div>
+                </div>
             </div>
+
+
         </div>
+
+        
+
 
         <div class="footer flex noshrink"></div>
     </div>
