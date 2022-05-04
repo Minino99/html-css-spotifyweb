@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -220,4 +219,93 @@ text-align: center;
 
 .popular img{
     border-radius: 50%;
+}
+
+.footer{
+    padding:0.5rem 0.5rem;
+    background-color: var(--color-tertiary);
+    align-items: center;
+    justify-content: space-between;
+    max-height: 10%;
+
+}
+
+.hiddenof{
+    overflow: hidden;
+}
+
+.recap{
+    align-items: center;
+    color: var(--color-text);
+    width: fit-content;
+    padding-right: 1rem;
+}
+
+.recap img{
+    max-width: 75px;
+    padding-right: 1rem;
+}
+
+.recap h4{
+    color: white;
+    font-size: 0.9rem;
+}
+
+.recap .songname{
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding-right: 1.8rem;
+}
+
+.icons i{
+    padding-right: 0.5rem;
+}
+
+.utilities{
+    justify-content: space-between;
+    width: 40%;
+    max-width: 700px;
+}
+
+.playbuttons{
+    color: white;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.playbuttons i{
+    padding-right: 2rem;
+}
+
+.playbuttons .fa-circle-play{
+    font-size: 2rem;
+}
+
+.progressbar{
+    align-items: center;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.progressbar-bar{
+    background-color: #5A5A5A;
+    height: 3px;
+    border-radius: 5px;
+    margin: 0rem 1rem;
+}
+
+.tools{
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+    width: 30%;
+    max-width: 200px;
+}
+
+
+.tools i{
+    padding-right: 0.5rem;
 }
