@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--color-text);
 }
@@ -22,7 +23,7 @@ body {
     --color-text: #6D6D6D;
 }
 
-.paddingbottom{
+.paddingbottom {
     padding-bottom: 1rem;
 }
 
@@ -31,110 +32,111 @@ body {
     width: 100%;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.flexcol{
+.flexcol {
     flex-direction: column;
 }
 
-.grow{
-    flex-grow: 1 ;
+.grow {
+    flex-grow: 1;
 }
 
-.noshrink{
+.noshrink {
     flex-shrink: 0;
 }
 
-.nav{
+.nav {
     background-color: var(--color-secondary);
     color: var(--color-text);
     overflow: hidden;
     max-width: 250px;
 }
 
-.logo img{
+.logo img {
     width: 70%;
     padding: 2rem 1rem;
 }
 
-.nav-btns .btn{
+.nav-btns .btn {
     padding: 0.7rem 1rem;
     font-weight: 700;
     vertical-align: middle;
 }
 
-.nav .icon{
+.nav .icon {
     max-width: 24px;
     aspect-ratio: 1;
     vertical-align: middle;
     margin-right: 0.5rem;
 }
 
-.nav-playlist, .nav-pl-names{
+.nav-playlist,
+.nav-pl-names {
     padding: 1rem
 }
 
-.nav-playlist i{
+.nav-playlist i {
     font-size: 3rem;
     margin-right: 0.5rem;
     vertical-align: middle;
 }
 
-.nav-playlist h4{
+.nav-playlist h4 {
     display: inline-block;
 }
 
-.nav-pl-names{
+.nav-pl-names {
     overflow: auto;
 }
 
-.plname{
+.plname {
     padding-bottom: 1rem;
     font-weight: 700;
 }
 
-.btn.selected{
+.btn.selected {
     color: rgba(255, 255, 255, 0.8);
     border-left: 2px solid rgb(12, 206, 12);
 }
 
-.userinfo{
+.userinfo {
     justify-self: flex-end;
     padding: 1rem;
 }
 
-.userinfo .downloadpp{
+.userinfo .downloadpp {
     border-bottom: solid 1px gray;
     padding-bottom: 1rem;
     font-weight: 700;
 }
 
-.user img.icon{
+.user img.icon {
     background-color: gray;
     border-radius: 50%;
 }
 
-.user span{
+.user span {
     font-weight: 700;
     font-size: 1.2rem;
     color: white;
     vertical-align: middle;
 }
 
-.userinfo .user{
+.userinfo .user {
     padding-top: 1rem;
 }
 
-.header{
+.header {
     background-color: #080B12;
     color: white;
     padding: 2rem 0.3rem;
     flex-direction: row-reverse;
 }
 
-.header .btn{
+.header .btn {
     padding: 1rem 3rem;
     font-weight: 700;
     border: 2px solid white;
@@ -143,172 +145,208 @@ body {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.genres{
+.genres {
     color: var(--color-text);
     font-weight: 700;
     justify-content: center;
 }
 
-.genres span{
+.genres span {
     padding: 0.5rem 1rem;
 }
 
-.body{
+.body {
     padding: 1rem;
     overflow: auto;
 }
 
-.recentlyplayed h2{
+.recentlyplayed h2 {
     color: white;
     padding-bottom: 2rem;
 }
 
-.albums{
+.albums {
     flex-wrap: wrap;
     gap: 1rem;
     padding-bottom: 2rem;
 }
 
-.album{
+.album {
     flex-basis: calc(100% / 6 - 1rem);
     flex-shrink: 1;
 }
 
-.album h3{
+.album h3 {
     text-align: center;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
     color: white;
     word-break: break-all;
 }
 
-.album .subtitle{
-text-align: center;
+.album .subtitle {
+    text-align: center;
     color: var(--color-text);
     font-weight: 700;
     font-size: 0.8rem;
 }
 
-.album img{
+.album img {
     width: 100%;
 }
 
-.albumimg{
-    padding-bottom: 1rem;
+.albumimg {
+    aspect-ratio: 1;
+    position: relative;
 }
 
-.createdforyou h2{
+.playalbum {
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+.createdforyou h2 {
     color: white;
     padding-bottom: 1rem;
 }
 
-.createdforyou .subtitle{
+.createdforyou .subtitle {
     color: var(--color-text);
     font-weight: 700;
     font-size: 0.8rem;
     padding-bottom: 2rem;
 }
 
-.createdforyou{
+.createdforyou {
     padding-bottom: 2rem;
 }
 
-.popular h2{
+.popular h2 {
     color: white;
     padding-bottom: 1rem;
 }
 
-.popular .subtitle{
+.popular .subtitle {
     color: var(--color-text);
     font-weight: 700;
     font-size: 0.8rem;
     padding-bottom: 2rem;
 }
 
-.popular{
+.popular {
     padding-bottom: 2rem;
 }
 
-.popular img{
+.popular img {
     border-radius: 50%;
 }
 
-.footer{
-    padding:0.5rem 0.5rem;
+.footer {
+    padding: 0.5rem 0.5rem;
     background-color: var(--color-tertiary);
     align-items: center;
     justify-content: space-between;
     max-height: 10%;
-
 }
 
-.hiddenof{
+.clickedmenu{
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.clickedmenu .selectedbox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 2px;
+}
+
+.selectedbox .greenbox{
+    width: 35%;
+    height: 100%;
+    background-color: rgb(12, 206, 12);
+}
+
+
+.hiddenof {
     overflow: hidden;
 }
 
-.recap{
+.recap {
     align-items: center;
     color: var(--color-text);
     width: fit-content;
     padding-right: 1rem;
 }
 
-.recap img{
+.recap img {
     max-width: 75px;
     padding-right: 1rem;
 }
 
-.recap h4{
+.recap h4 {
     color: white;
     font-size: 0.9rem;
 }
 
-.recap .songname{
+.recap .songname {
     font-weight: 700;
     font-size: 0.8rem;
     font-weight: 700;
     padding-right: 1.8rem;
 }
 
-.icons i{
+.icons i {
     padding-right: 0.5rem;
 }
 
-.utilities{
+.utilities {
     justify-content: space-between;
     width: 40%;
     max-width: 700px;
 }
 
-.playbuttons{
+.playbuttons {
     color: white;
     font-size: 1.4rem;
     align-items: center;
     justify-content: center;
 }
 
-.playbuttons i{
+.playbuttons i {
     padding: 0.5rem 1rem;
 }
 
-.playbuttons .fa-circle-play{
+.playbuttons .fa-circle-play {
     font-size: 2rem;
 }
 
-.progressbar{
+.progressbar {
     align-items: center;
     color: white;
     font-size: 0.7rem;
     font-weight: 700;
 }
 
-.progressbar-bar{
+.pgrsts {
+    position: relative;
+}
+
+.progressbar-bar {
     background-color: #5A5A5A;
     height: 3px;
     border-radius: 5px;
     margin: 0rem 1rem;
 }
 
-.tools{
+.tools {
     align-items: center;
     color: white;
     font-size: 0.8rem;
@@ -317,37 +355,88 @@ text-align: center;
 }
 
 
-.tools i{
+.tools i {
     padding-right: 0.5rem;
 }
 
-.smallogo{
+.smallogo {
     display: none;
     max-width: 40px;
+}
+
+.progressbar-status {
+    position: absolute;
+    height: 3px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 20%;
+    top: 0;
+    left: 1rem;
+}
+
+.pgr-circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 10px;
+    height: 10px;
+    top: -3px;
+    left: calc(20% + 0.9rem);
+    display: none;
+}
+
+.progressbar .pgr-circle {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 15px;
+    height: 15px;
+    top: -6px;
 }
 
 
 /* HOVER ANIMATIONS */
 
-a:hover{
-color: rgba(255, 255, 255, 0.8);
+a:hover {
+    color: rgba(255, 255, 255, 0.8);
 }
 
-
-.header .btn:hover{
+.header .btn:hover {
     transform: scale(1.1);
 }
 
-.utilities .playbuttons a{
+.utilities .playbuttons a {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.utilities .playbuttons .playmusic:hover{
+.utilities .playbuttons .playmusic:hover {
     transform: scale(1.2);
 }
 
-.tools a{
+.tools a {
     color: rgba(255, 255, 255, 0.8);
+}
+
+.progressbar:hover .pgr-circle {
+    display: block;
+}
+
+.progressbar:hover .progressbar-status{
+    background-color: rgb(12, 206, 12);
+}
+
+.pgrsts:hover .pgr-circle {
+    display: block;
+}
+
+.albumimg:hover .playalbum {
+    display: flex;
+}
+
+.albumimg:hover img {
+    filter: brightness(0.5);
+}
+
+.albumimg:hover{
+    cursor: pointer;
 }
 
 /* USARE IL TRANSFORM PER FARE GLI EFFETTI HOVER */
@@ -356,117 +445,117 @@ color: rgba(255, 255, 255, 0.8);
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1100px){
-    .album{
+@media screen and (max-width: 1100px) {
+    .album {
         flex-basis: calc(100% / 6 - 1rem);
         flex-shrink: 1;
     }
 
-    .genres{
+    .genres {
         display: inline-block;
         text-align: center;
         line-height: 2rem;
     }
 }
 
-@media screen and (max-width: 900px){
-    .album{
+@media screen and (max-width: 900px) {
+    .album {
         flex-basis: calc(100% / 5 - 1rem);
         flex-shrink: 1;
     }
 }
 
-@media screen and (max-width: 800px){
-    .album{
+@media screen and (max-width: 800px) {
+    .album {
         flex-basis: calc(100% / 4 - 1rem);
         flex-shrink: 1;
     }
 }
 
-@media screen and (max-width: 700px){
-    .album{
+@media screen and (max-width: 700px) {
+    .album {
         flex-basis: calc(100% / 3 - 1rem);
         flex-shrink: 1;
     }
-    
-    .footer .recap{
+
+    .footer .recap {
         margin-right: 0.5rem;
         padding: 0;
         justify-content: flex-start;
         transform: scale(0.9);
     }
 
-    .footer .utilities{
+    .footer .utilities {
         margin-right: 0.5rem;
         padding: 0;
         transform: scale(0.9);
     }
 
-    .footer .tools{
+    .footer .tools {
         margin-left: 0.5rem;
         justify-content: flex-end;
     }
 
-    .tools .progressbar-bar{
+    .tools .progressbar-bar {
         display: none;
     }
 }
 
-@media screen and (max-width: 600px){
-    .album{
+@media screen and (max-width: 600px) {
+    .album {
         flex-basis: calc(100% / 2 - 1rem);
         flex-shrink: 1;
     }
 }
 
-@media screen and (max-width: 500px){
-    .album{
+@media screen and (max-width: 500px) {
+    .album {
         flex-basis: calc(100% / 2 - 1rem);
         flex-shrink: 1;
     }
 
-    .nav-playlist{
+    .nav-playlist {
         display: none;
     }
 
-    .nav span{
+    .nav span {
         display: none;
     }
 
-    .nav .plname{
+    .nav .plname {
         display: none;
     }
 
-    .logo{
+    .logo {
         display: none;
     }
 
-    .smallogo{
+    .smallogo {
         display: block;
     }
 
-    .nav-btns .btn{
+    .nav-btns .btn {
         padding: 0;
         margin: 0.5rem 0;
     }
 
-    .nav .icon{
+    .nav .icon {
         margin: 0;
     }
 
-    .btn.selected{
+    .btn.selected {
         border: none;
     }
 
-    .userinfo{
+    .userinfo {
         padding: 0;
     }
 
-    .userinfo .icon{
+    .userinfo .icon {
         margin: 0.5rem 0;
     }
 
-    .userinfo .downloadpp{
+    .userinfo .downloadpp {
         border: none;
     }
 
