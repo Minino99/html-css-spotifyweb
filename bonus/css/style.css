@@ -548,3 +548,9 @@ a:hover {
     }
 
 }
+
+@media screen and (max-height: 500px) {
+    .header {
+        display: none;
+    }
+}
