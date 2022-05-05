@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--color-primary);
@@ -134,6 +139,8 @@ body {
     font-weight: 700;
     border: 2px solid white;
     border-radius: 30px;
+    margin-right: 2rem;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .genres{
@@ -164,12 +171,14 @@ body {
 
 .album{
     flex-basis: calc(100% / 6 - 1rem);
+    flex-shrink: 1;
 }
 
 .album h3{
     text-align: center;
     padding-bottom: 1rem;
     color: white;
+    word-break: break-all;
 }
 
 .album .subtitle{
@@ -181,7 +190,9 @@ text-align: center;
 
 .album img{
     width: 100%;
-    aspect-ratio: 1;
+}
+
+.albumimg{
     padding-bottom: 1rem;
 }
 
@@ -276,7 +287,7 @@ text-align: center;
 }
 
 .playbuttons i{
-    padding-right: 2rem;
+    padding: 0.5rem 1rem;
 }
 
 .playbuttons .fa-circle-play{
@@ -308,4 +319,155 @@ text-align: center;
 
 .tools i{
     padding-right: 0.5rem;
+}
+
+.smallogo{
+    display: none;
+    max-width: 40px;
+}
+
+
+/* HOVER ANIMATIONS */
+
+a:hover{
+color: rgba(255, 255, 255, 0.8);
+}
+
+
+.header .btn:hover{
+    transform: scale(1.1);
+}
+
+.utilities .playbuttons a{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.utilities .playbuttons .playmusic:hover{
+    transform: scale(1.2);
+}
+
+.tools a{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* USARE IL TRANSFORM PER FARE GLI EFFETTI HOVER */
+/* per i focus non dimenticare tabindex=-1 */
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1100px){
+    .album{
+        flex-basis: calc(100% / 6 - 1rem);
+        flex-shrink: 1;
+    }
+
+    .genres{
+        display: inline-block;
+        text-align: center;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .album{
+        flex-basis: calc(100% / 5 - 1rem);
+        flex-shrink: 1;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .album{
+        flex-basis: calc(100% / 4 - 1rem);
+        flex-shrink: 1;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .album{
+        flex-basis: calc(100% / 3 - 1rem);
+        flex-shrink: 1;
+    }
+    
+    .footer .recap{
+        margin-right: 0.5rem;
+        padding: 0;
+        justify-content: flex-start;
+        transform: scale(0.9);
+    }
+
+    .footer .utilities{
+        margin-right: 0.5rem;
+        padding: 0;
+        transform: scale(0.9);
+    }
+
+    .footer .tools{
+        margin-left: 0.5rem;
+        justify-content: flex-end;
+    }
+
+    .tools .progressbar-bar{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .album{
+        flex-basis: calc(100% / 2 - 1rem);
+        flex-shrink: 1;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .album{
+        flex-basis: calc(100% / 2 - 1rem);
+        flex-shrink: 1;
+    }
+
+    .nav-playlist{
+        display: none;
+    }
+
+    .nav span{
+        display: none;
+    }
+
+    .nav .plname{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .smallogo{
+        display: block;
+    }
+
+    .nav-btns .btn{
+        padding: 0;
+        margin: 0.5rem 0;
+    }
+
+    .nav .icon{
+        margin: 0;
+    }
+
+    .btn.selected{
+        border: none;
+    }
+
+    .userinfo{
+        padding: 0;
+    }
+
+    .userinfo .icon{
+        margin: 0.5rem 0;
+    }
+
+    .userinfo .downloadpp{
+        border: none;
+    }
+
 }
