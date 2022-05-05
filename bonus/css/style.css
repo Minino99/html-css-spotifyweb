@@ -451,6 +451,11 @@ a:hover {
     display: flex;
 }
 
+.albumimg img{
+    transition: filter 0.3s;
+}
+
+
 .albumimg:hover img {
     filter: brightness(0.5);
 }

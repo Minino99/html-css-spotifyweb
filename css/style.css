@@ -395,8 +395,16 @@ body {
 
 /* HOVER ANIMATIONS */
 
+a{
+    transition: color 0.3s;
+}
+
 a:hover {
     color: rgba(255, 255, 255, 0.8);
+}
+
+.btn{
+    transition: transform 0.3s;
 }
 
 .header .btn:hover {
@@ -405,6 +413,10 @@ a:hover {
 
 .utilities .playbuttons a {
     color: rgba(255, 255, 255, 0.8);
+}
+
+.playmusic{
+    transition: transform 0.3s;
 }
 
 .utilities .playbuttons .playmusic:hover {
@@ -419,6 +431,10 @@ a:hover {
     display: block;
 }
 
+.progressbar-status{
+    transition: background-color 0.3s;
+}
+
 .progressbar:hover .progressbar-status{
     background-color: rgb(12, 206, 12);
 }
@@ -429,6 +445,10 @@ a:hover {
 
 .albumimg:hover .playalbum {
     display: flex;
+}
+
+.albumimg img{
+    transition: filter 0.3s;
 }
 
 .albumimg:hover img {
